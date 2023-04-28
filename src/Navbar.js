@@ -6,7 +6,7 @@ function Navbar(){
         <nav className="nav-wrapper blue darken-1">
             <ul className="center">
                 <li><NavLink to="/">Home</NavLink> </li>
-                <li><NavLink to="/Towers">Towers of Hanoi</NavLink> </li>
+                <li><NavLink to="/TowersOfHanio">TowersOfHanio of Hanoi</NavLink> </li>
                 <li><NavLink to="/Numbers">Number Puzzle </NavLink> </li>
             </ul>
         </nav>

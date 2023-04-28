@@ -75,7 +75,8 @@
 
 
 .tower {
-  align-content: end;
+  align-content: flex-end;
+  display: grid;
   border: 1px solid #1e88e5;
   height: 70vh;
   position: relative;
@@ -95,6 +96,7 @@
 
 
 .disc {
+  align-self: end;
   display: flex;
   background-color: hotpink;
   border: 1px solid black;

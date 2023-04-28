@@ -1,22 +1,14 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import { useDrag } from 'react-dnd';
 
 
-function Disc({discs, move, setTower, checkWin}){
+function Disc({ id, size,}){
 
     return(
-        <div className= "tower" style={{display: "inline"}}>
-            <div className="peg"></div>
-            {discs
-                .sort((a, b) => a.size - b.size)
-                .map((disc) =>(
-                <div
-                    key = {disc.id}
-                    id  = {disc.id}
-                    className="disc"
-                    style={{width: disc.size * 5, bottom: disc.size}}
-                ></div>
-            ))}
-        </div>
+        <div
+            className="disc"
+            style={{ width: size * 5}}
+        ></div>
     )
 }
 
